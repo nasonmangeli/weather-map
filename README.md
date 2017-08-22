@@ -9,7 +9,7 @@ This displays the work done at [Moringa School](http://moringaschool.com/) by [N
 
 ## Behaviour 
 The webpage shows:
-- current weather 
+- current temprature
 - today's high and low temperatures
 - description of current weather conditions
 - current wind speed
