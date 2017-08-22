@@ -11,15 +11,21 @@
   <title>Weather Map</title>
 </head>
 <body>
-  <h1>Nairobi's Current Weather</h1>
-  <section>
-    <p>Current temperature: <span class="temp"></span></p>
-    <p>Today's high temperature: <span class="highTemp"></span></p>
-    <p>Today's low temperature: <span class="lowTemp"></span></p>
-    <p>Description of current weather conditions: <span class="description"></span></p>
-    <p>Current wind speed: <span class="windspeed"></span></p>
-    <p>Time of sunrise: <span class="sunrise"></span></p>
-    <p>Time of sunset: <span class="sunset"></span></p>
-  </section>
+  <div class="contianer">
+    <div class="jumbotron">
+      <h1>Current Weather</h1>
+      <a href="#" id="city1">Nairobi</a>
+      <a href="#" id="city2">Mombasa</a>
+    </div>
+    <section>
+      <p>Current temperature: <span  id="temp" class="clearField"></span></p>
+      <p>Today's high temperature: <span id="highTemp" class="clearField"></span></p>
+      <p>Today's low temperature: <span id="lowTemp" class="clearField"></span></p>
+      <p>Description of current weather conditions: <span id="description" class="clearField"></span></p>
+      <p>Current wind speed: <span id="windspeed" class="clearField"></span></p>
+      <p>Time of sunrise: <span id="sunrise" class="clearField"></span></p>
+      <p>Time of sunset: <span id="sunset" class="clearField"></span></p>
+    </section>
+  </div>
 </body>
 </html>
