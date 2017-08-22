@@ -27,7 +27,7 @@ $(document).ready(function(){
     $('.clearField').empty();
     alert("The data is currently being fetched");
     $.get({
-      url: 'http://api.openweathermap.org/data/2.5/weather?q=Nairobi&mode=json&units=imperial&APPID=964b618a488e3dd53cdc4192294e9b98',
+      url: 'https://api.openweathermap.org/data/2.5/weather?q=Nairobi&mode=json&units=imperial&APPID=964b618a488e3dd53cdc4192294e9b98',
       success: function(weather_data){
         to_be_run_on_server_response(weather_data);
       }
@@ -39,7 +39,7 @@ $(document).ready(function(){
     $('.clearField').empty();
     alert("The data is currently being fetched");
     $.get({
-      url: 'http://api.openweathermap.org/data/2.5/weather?q=Mombasa&mode=json&units=imperial&APPID=964b618a488e3dd53cdc4192294e9b98',
+      url: 'https://api.openweathermap.org/data/2.5/weather?q=Mombasa&mode=json&units=imperial&APPID=964b618a488e3dd53cdc4192294e9b98',
       success: function(weather_data){
         to_be_run_on_server_response(weather_data);
       }
