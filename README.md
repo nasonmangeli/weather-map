@@ -23,6 +23,7 @@ No known bugs.
 
 * HTML
 * Javascript
+* Open weather API
 
 ### License
 
