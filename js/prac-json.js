@@ -1,18 +1,35 @@
 // Backend
 var place_post_on_page = function(data){
-  $('#display').append("<li>"+data.body+"</li>")
+  $('#display').append("<li>"+"<h2 class='clickable'>"+data.title+"</h2>"+"</li>")
+}
+
+var selected_post_on_page = function(data) {
+  $('#display').append("<li>"+"<h2 class='clickable'>"+
+  data.title+"</h2>"+"</li>"+"<h3>"+data.userId+"</h3>"+
+  "<h4>"+data.id+"</h4>"+"<p>"+data.body+"</p>")
 }
 
 // Frontend
 $(document).ready(function(){
-  for (var index=1; index<=10; index++) {
+
+  for (var index=1; index <= 10; index++) {
+
     $.get({
       url: 'http://jsonplaceholder.typicode.com/posts/'+index,
       success: function(data) {
-        console.log(data);
+        // console.log(data);
         place_post_on_page(data);
       }
-    }) 
+
+    })
+
+    $('.clickable').click(function () {
+      // $('#display').text(" ")
+      $(this).selected_post_on_page(data);
+      // console.log("selected_post_on_page(data)");
+      // $('#display').text(" ");
+      // selected_post_on_page(data);
+    });
   }
 
   // $.get({
